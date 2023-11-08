@@ -2,6 +2,8 @@
 <div *ngIf="user">
     <h2>{{user.userName | uppercase}} Details</h2>
     <div><span>id: </span>{{user._id}}</div>
+    <div><span>created denuncias: </span>{{user.denuncias}}</div>
+
     <!-- Permite editar el nombre del user mediante Two-Way Binding-->
     <div>
       <label for="user-name">User name: </label>

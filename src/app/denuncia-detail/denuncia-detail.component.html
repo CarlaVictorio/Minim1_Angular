@@ -1,0 +1,38 @@
+<!--Muestra detalles del 'denuncia' seleccionado con *ngIf-->
+<div *ngIf="denuncia">
+    <h2>{{denuncia.titulo | uppercase}} DETAILS</h2>
+    <div><span>id: </span>{{denuncia._id}}</div>
+    <div><span>user id: </span>{{denuncia.idUser}}</div>
+    <div><span>descripcion: </span>{{denuncia.descripcion}}</div>
+    <div><span>fecha: </span>{{denuncia.fecha}}</div>
+    <div><span>gravedad: </span>{{denuncia.gravedad}}</div>
+
+    <div>
+      <h2> UPDATE </h2>
+    </div>
+
+
+    <!-- Permite editar el nombre del event mediante Two-Way Binding-->
+    <div>
+      <label for="denuncia-name">Denuncia title: </label>
+      <input id="denuncia-name" [(ngModel)]="denuncia.titulo" placeholder="Denuncia name"/>
+    </div>
+    <div>
+      <label for="denuncia-descripcion">Denuncia description: </label>
+      <input id="denuncia-descripcion" [(ngModel)]="denuncia.descripcion" placeholder="Denuncia descripcion"/>
+    </div>
+    <div>
+      <label for="denuncia-fecha">Denuncia fecha: </label>
+      <input id="denuncia-fecha" [(ngModel)]="denuncia.fecha" placeholder="Denuncia fecha"/>
+    </div>
+    <div>
+      <label for="denuncia-gravedad">Denuncia gravedad: </label>
+      <input id="denuncia-gravedad" [(ngModel)]="denuncia.gravedad" placeholder="Denuncia gravedad"/>
+    </div>
+      
+
+    
+    <!--------------------------------------------------------------->
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>

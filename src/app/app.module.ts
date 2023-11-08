@@ -20,6 +20,10 @@ import { NavigationComponent } from './navbar/navbar.component';
 import { EventAddComponent } from './event-add/event-add.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { DenunciasComponent } from './denuncias/denuncias.component';
+import { DenunciaDetailComponent } from './denuncia-detail/denuncia-detail.component';
+import { DenunciaAddComponent } from './denuncia-add/denuncia-add.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +39,12 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
     NavigationComponent,
     EventAddComponent,
     UserAddComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    DenunciasComponent,
+    DenunciaDetailComponent,
+    DenunciaAddComponent
+   
+   
 ],
   imports: [
     BrowserModule,

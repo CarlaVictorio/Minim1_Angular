@@ -1,0 +1,24 @@
+<h2>ADD A DENUNCIA</h2>
+  
+<div>
+      <label for="denuncia-name">Titulo: </label>
+      <input id="denuncia-name" [(ngModel)]="denunciaAdd.titulo" placeholder="Denuncia name"/>
+    </div>
+    <div>
+        <label for="denuncia-descripcion">Descripcion: </label>
+        <input id="denuncia-descripcion" [(ngModel)]="denunciaAdd.descripcion" placeholder="Descripcion"/>
+    </div>
+    <div>
+        <label for="denuncia-fecha">Fecha: </label>
+        <input id="denuncia-fecha" [(ngModel)]="denunciaAdd.fecha" placeholder="Fecha: YYYY-MM-DD"/>
+    </div>
+    <div>
+        <label for="denuncia-gravedad">Gravedad: </label>
+        <input id="denuncia-gravedad" [(ngModel)]="denunciaAdd.gravedad" placeholder="Gravedad"/>
+      </div>
+      <div>
+        <label for="denuncia-creator">User id: </label>
+        <input id="denuncia-creator" [(ngModel)]="denunciaAdd.idUser" placeholder="existing user id"/>
+      </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
